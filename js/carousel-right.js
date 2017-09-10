@@ -1,7 +1,7 @@
-z$(document).ready(function(){
-// invoke the carousel2
-    $('#mycarousel2').carousel2({
-      interval:6000
+$(document).ready(function(){
+// invoke the carousel
+    $('#mycarousel2').carousel({
+      interval:0
     });
 
 
@@ -9,12 +9,12 @@ z$(document).ready(function(){
 $('#mycarousel2').bind('mousewheel DOMMouseScroll', function(e){
 
         if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-            $(this).carousel2('prev');
+            $(this).carousel('prev');
 
 
         }
         else{
-            $(this).carousel2('next');
+            $(this).carousel('next');
 
         }
     });
@@ -28,19 +28,19 @@ $('#mycarousel2').bind('mousewheel DOMMouseScroll', function(e){
 
         var yMove = event.originalEvent.touches[0].pageY;
         if( Math.floor(yClick - yMove) > 1 ){
-            $(".carousel2").carousel2('next');
+            $(".carousel").carousel('next');
         }
         else if( Math.floor(yClick - yMove) < -1 ){
-            $(".carousel2").carousel2('prev');
+            $(".carousel").carousel('prev');
         }
     });
-    $(".carousel2").on("touchend", function(){
+    $(".carousel").on("touchend", function(){
             $(this).off("touchmove");
     });
 });
 
 });
-//animated  carousel2 start
+//animated  carousel start
 $(document).ready(function(){
 
 //to add  start animation on load for first slide
@@ -63,7 +63,7 @@ $(function(){
 
 
 
-     $("#mycarousel2").on('slide.bs.carousel2', function () {
+     $("#mycarousel2").on('slide.bs.carousel', function () {
 		$.fn.extend({
 			animateCss: function (animationName) {
 				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
