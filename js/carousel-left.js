@@ -1,9 +1,10 @@
 $(document).ready(function(){
+
 // invoke the carousel
     $('#myCarousel').carousel({
       interval:6000
     });
-    
+
 
 // scroll slides on mouse scroll
 $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
@@ -42,7 +43,6 @@ $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
 });
 //animated  carousel start
 $(document).ready(function(){
-
 //to add  start animation on load for first slide
 $(function(){
 		$.fn.extend({
@@ -67,7 +67,7 @@ $(function(){
 		$.fn.extend({
 			animateCss: function (animationName) {
 				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-				this.addClass('animated ' + animationName).one(animationEnd, function() {
+				$(this).addClass('animated ' + animationName).one(animationEnd, function() {
 					$(this).removeClass(animationName);
 				});
 			}
