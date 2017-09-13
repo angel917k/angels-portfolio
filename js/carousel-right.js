@@ -7,6 +7,12 @@ new CircleType(document.getElementById('curve-text-4')).dir(-1).radius(100);
 new CircleType(document.getElementById('curve-text-5')).dir(-1).radius(100);
 //circluar fonts
 
+// tooltip indicators
+$('[data-toggle="tooltip"]').tooltip({
+  delay:{show:0}
+});
+
+// tooltip indicators
 
 // invoke the carousel
     $('#myCarousel2').carousel({
@@ -15,20 +21,6 @@ new CircleType(document.getElementById('curve-text-5')).dir(-1).radius(100);
 
 // invoke the carousel
 
-// scroll slides on mouse scroll
-$('#myCarousel2').bind('mousewheel DOMMouseScroll', function(e){
-  console.log(e, 'bind event');
-
-        if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-            $(this).carousel('prev');
-
-        }
-        else{
-            $(this).carousel('next');
-
-        }
-    });
-// scroll slides on mouse scroll
 
 
 //scroll slides on swipe for touch enabled devices
