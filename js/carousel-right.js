@@ -1,27 +1,31 @@
 $(document).ready(function(){
+// circluar fonts
+new CircleType(document.getElementById('curve-text-1')).dir(-1).radius(100);
+new CircleType(document.getElementById('curve-text-2')).dir(-1).radius(100);
+new CircleType(document.getElementById('curve-text-3')).dir(-1).radius(100);
+new CircleType(document.getElementById('curve-text-4')).dir(-1).radius(100);
+new CircleType(document.getElementById('curve-text-5')).dir(-1).radius(100);
+//circluar fonts
+
+// tooltip indicators
+$('[data-toggle="tooltip"]').tooltip({
+  delay:{show:0}
+});
+
+// tooltip indicators
+
 // invoke the carousel
-    $('#mycarousel2').carousel({
-      interval:0
+    $('#myCarousel2').carousel({
+      interval:false
     });
 
-
-// scroll slides on mouse scroll
-$('#mycarousel2').bind('mousewheel DOMMouseScroll', function(e){
-
-        if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-            $(this).carousel('prev');
+// invoke the carousel
 
 
-        }
-        else{
-            $(this).carousel('next');
-
-        }
-    });
 
 //scroll slides on swipe for touch enabled devices
 
- 	$("#mycarousel2").on("touchstart", function(event){
+ 	$("#myCarousel2").on("touchstart", function(event){
 
         var yClick = event.originalEvent.touches[0].pageY;
     	$(this).one("touchmove", function(event){
@@ -53,9 +57,9 @@ $(function(){
 				});
 			}
 		});
-			 $('.item1.active img').animateCss('slideInDown');
-			 $('.item1.active h2').animateCss('zoomIn');
-			 $('.item1.active p').animateCss('fadeIn');
+			 $('.item-right.active img').animateCss('fadeInLeft');
+			 $('.item-right.active h2').animateCss('fadeInDown');
+			 $('.item-right.active p').animateCss('fadeIn');
 
 });
 
@@ -63,7 +67,7 @@ $(function(){
 
 
 
-     $("#mycarousel2").on('slide.bs.carousel', function () {
+     $("#myCarousel2").on('slide.bs.carousel', function () {
 		$.fn.extend({
 			animateCss: function (animationName) {
 				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -75,9 +79,9 @@ $(function(){
 
 // add animation type  from animate.css on the element which you want to animate
 
-		$('.item1 img').animateCss('slideInDown');
-		$('.item1 h2').animateCss('zoomIn');
-		$('.item1 p').animateCss('fadeIn');
+		$('.item-right img').animateCss('slideinRight');
+		$('.item-right h2').animateCss('zoomIn');
+		$('.item-right p').animateCss('fadeIn');
 
 		$('.item2 img').animateCss('zoomIn');
 		$('.item2 h2').animateCss('swing');
