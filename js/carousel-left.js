@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 // invoke the carousel
     $('#myCarousel').carousel({
-      interval:6000
+      interval:false
     });
 
 
