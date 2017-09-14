@@ -8,11 +8,44 @@ new CircleType(document.getElementById('curve-text-5')).dir(-1).radius(100);
 //circluar fonts
 
 // tooltip indicators
+$("#slacktooltip").tooltip({
+  delay:{show:0}
+});
+
+
 $('[data-toggle="tooltip"]').tooltip({
   delay:{show:0}
 });
 
+$("#snapchattooltip").tooltip({
+});
+
+$("#resourcestooltip").tooltip({
+  delay:{show:0, hide:4000}
+});
 // tooltip indicators
+
+// form js
+$('#characterLeft').text('140 characters left');
+$('#message').keydown(function () {
+    var max = 140;
+    var len = $(this).val().length;
+    if (len >= max) {
+        $('#characterLeft').text('You have reached the limit');
+        $('#characterLeft').addClass('red');
+        $('#btnSubmit').addClass('disabled');
+    }
+    else {
+        var ch = max - len;
+        $('#characterLeft').text(ch + ' characters left');
+        $('#btnSubmit').removeClass('disabled');
+        $('#characterLeft').removeClass('red');
+    }
+});
+
+// form js
+
+
 
 // invoke the carousel
     $('#myCarousel2').carousel({
@@ -65,17 +98,17 @@ $(function(){
 
 //to start animation on  mousescroll , click and swipe
 
+$("#myCarousel").on('slide.bs.carousel', function () {
+$.fn.extend({
+ animateCss: function (animationName) {
+   var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+   $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+     $(this).removeClass(animationName);
+   });
+ }
+});
 
 
-     $("#myCarousel2").on('slide.bs.carousel', function () {
-		$.fn.extend({
-			animateCss: function (animationName) {
-				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-				this.addClass('animated ' + animationName).one(animationEnd, function() {
-					$(this).removeClass(animationName);
-				});
-			}
-		});
 
 // add animation type  from animate.css on the element which you want to animate
 
