@@ -1,4 +1,4 @@
-alert("Hi there! My website is still under consctruction, and needs tweeks here and there. Also, due to the limitations of hosting through Github, some images may not appear correctly. I will continue to optimize my website so that it works correctly on any device. For the time being, please visit the desktop version for the best experience! Thanks!");
+alert("Hi there! My website is still under construction, and needs tweaks here and there. Also, due to the limitations of hosting through Github, some images may not appear correctly. I will continue to optimize my website so that it works correctly on any device. For the time being, please visit the desktop version for the best experience! Thanks!");
 
 $(document).ready(function(){
 
