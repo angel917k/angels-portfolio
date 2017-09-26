@@ -418,14 +418,14 @@ width:auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition:all 1s;
 }
-.portriat:hover{
+/* .portriat:hover {
   height: 70%;
   background-image: url('../img/lion.gif');
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*transform: rotate(90deg);*/
-}
+/*}*/
     /*end of slide 3 styles*/
 
     /*start of slide 4 styles*/
