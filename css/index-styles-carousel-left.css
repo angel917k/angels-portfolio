@@ -17,7 +17,10 @@ html, body{
 /*start of outer containers for entire webpage*/
 .outter-carousel-container{
   height:100%;
-  background-image: url('../img/henry-madden-library.jpg');
+  background-image: url('../img/yosemite.jpg');
+  /*background-image: url('../img/yosemite2.jpg');*/
+  /*background-image: url('../img/yosemite3.jpg');*/
+  /*background-image: url('../img/yosemite4.jpg');*/
   background-position: center;
   background-size: cover;
 }
@@ -107,7 +110,7 @@ width:auto;
 /*end of vertical carousel indicators*/
 
 /*-------- Animation slider ------*/
-.animated1{
+/*.animated1{
  animation-duration:3s;
  -webkit-animation-duration:3s;
  -moz-animation-duration:3s;
@@ -116,7 +119,7 @@ width:auto;
  visibility:visible;
  opacity:1;
  transition:all 0.3s ease;
-}
+}*/
 .carousel-img{
   display: inline-block;
    margin: 0 auto;
@@ -132,11 +135,11 @@ width:auto;
   margin:auto;
   visibility:hidden;
   opacity:0;
-  transition:all 0.3s ease;
+  /*transition:all 0.3s ease;
   -webkit-transition:all 0.3s ease;
   -moz-transition:all 0.3s ease;
   -ms-transition:all 0.3s ease;
-  -o-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;*/
 }
 .item1 .carousel-img img , .item1.active .carousel-img img{
   max-height:300px;
@@ -144,7 +147,7 @@ width:auto;
 .item1.active .carousel-img img.animated{
   visibility:visible;
   opacity:1;
-  transition:all 1s ease;
+  /*transition:all 1s ease;
   -webkit-transition:all 1s ease;
   -moz-transition:all 1s ease;
   -ms-transition:all 1s ease;
@@ -156,19 +159,19 @@ width:auto;
   -o-animation-duration:2s;
   animation-delay:0.3s ;
   -webkit-animation-delay:0.3s;
-  -moz-animation-delay:0.3s;-ms-animation-delay:0.3s;
+  -moz-animation-delay:0.3s;-ms-animation-delay:0.3s;*/
 }
 .item .carousel-desc {
   color:#fff; text-align:center;
 }
 .item  h2{
   font-size:50px;
-  animation-delay:1.5s;
-  animation-duration:1s;
+  /*animation-delay:1.5s;*/
+  /*animation-duration:1s;*/
 }
 .item  p{
-  animation-delay:2.5s;
-  animation-duration:1s;
+  /*animation-delay:2.5s;*/
+  /*animation-duration:1s;*/
   width:75%;  /*This controls all p styles on page unless otherwise noted by ID*/
   margin:auto;
   margin-top: 15px;
@@ -197,7 +200,7 @@ width:auto;
   width:49%;
 }
 
-.item2 .carousel-img img , .item2.active .carousel-img img{max-height:300px;}
+/*.item2 .carousel-img img , .item2.active .carousel-img img{max-height:300px;}
 .item2.active .carousel-img img.animated{visibility:visible; opacity:1; transition:all 0.3s ease; animation-duration:3s; animation-delay:0.3s}
 .item2 h2 , item2.active h2{visibility:hidden; opacity:0; transition:all 5s ease;}
 .item2.active h2.animated{visibility:visible; opacity:1;  animation-delay:3s;}
@@ -212,7 +215,7 @@ width:auto;
 .item3.active h2.animated{visibility:visible; opacity:1;  animation-delay:1.5s}
 .item3 p , item3.active p{visibility:hidden; opacity:0; transition:all 5s ease; width:100%;  }
 .item3.active p.animated{visibility:visible; opacity:1;  animation-delay:2.5s;}
-
+*/
 
 
 /*start of right carousel styles*/
